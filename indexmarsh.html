@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="stylemarsh.css">
+<title>Social Activist Quiz</title>
+</head>
+<body>
+<section class="quiz-container">
+  <header><h1>Social Activist Quiz</h1></header>
+
+  <!-- Player name question -->
+  <article class="question-card">
+    <h3>Your Name????</h3>
+    <p>What is your name?</p>
+    <input type="text" id="q0" placeholder="Enter your name...">
+    <button id="submit0" class="check-btn" onclick="submitName()">Confirm</button>
+    <div id="feedback0" class="feedback"></div>
+  </article>
+
+  <!--Infooooo :)-->
+  <article class="question-card"><bold>This quiz is about well-known social activists who have made a positive impact around the world by standing up for important issues. It includes questions about their backgrounds, what they’re famous for, and their contributions to society. For example, Malala Yousafzai, who was born in Mingora, Pakistan, is known for promoting education for girls. Alicia Garza, from Los Angeles, California, helped create the Black Lives Matter movement. David Attenborough, a wildlife broadcaster who dislikes rats, raises awareness about biodiversity through TV. Brianna Fruean, born in 1998, is a Pacific climate activist from New Zealand. Joshua Wong, from Hong Kong, protested against police brutality. Bana Al Abed, born in 2009 in Syria, became known for sharing her experiences during the war. Dame Whina Cooper, from Northland, New Zealand, led the Māori Land March in 1975. The quiz helps you learn about these inspiring people and the causes they support, from climate action to human rights and education.</bold></article>
+
+  <!-- Question 1 -->
+  <article class="question-card">
+    <h3>Question 1</h3>
+    <p>Where does Bana Al Abed come from?</p>
+    <form class="radio-options">
+      <div><input type="radio" name="q1" value="A" id="q1a"><label for="q1a">Uzbekistan</label></div>
+      <div><input type="radio" name="q1" value="B" id="q1b"><label for="q1b">Sweden</label></div>
+      <div><input type="radio" name="q1" value="C" id="q1c"><label for="q1c">Syria</label></div>
+      <div><input type="radio" name="q1" value="D" id="q1d"><label for="q1d">North America</label></div>
+    </form>
+    <button type="button" class="check-btn" onclick="checkRadio(1)">Check Answer</button>
+    <div id="feedback1" class="feedback"></div>
+  </article>
+
+  <!-- Question 2 -->
+  <article class="question-card">
+    <h3>Question 2</h3>
+    <p>When was Bana Al Abed born?</p>
+    <select id="q2">
+      <option value="">Choose an Option</option>
+      <option value="A">2015</option>
+      <option value="B">2013</option>
+      <option value="C">2009</option>
+      <option value="D">2005</option>
+    </select>
+    <button type="button" class="check-btn" onclick="checkDropdown(2)">Check Answer</button>
+    <div id="feedback2" class="feedback"></div>
+  </article>
+
+  <!-- Question 3 -->
+  <div class="question-card">
+    <h3>Question 3</h3>
+    <p>Where was Brianna Fruean born?</p>
+    <input type="text" id="q3" placeholder="Type your answer here...">
+    <button id="submit3" class="check-btn" onclick="checkInput(3)">Submit</button>
+    <div class="feedback" id="feedback3"></div>
+  </div>
+
+  <!-- Question 4 -->
+  <div class="question-card">
+    <h3>Question 4</h3>
+    <p>What year was Brianna Fruean born?</p>
+    <input type="text" id="q4" placeholder="Clue: at some point in the 1900s">
+    <button id="submit4" class="check-btn" onclick="checkInput(4)">Submit</button>
+    <div class="feedback" id="feedback4"></div>
+  </div>
+
+  <!-- Question 5 -->
+  <article class="question-card">
+    <h3>Question 5</h3>
+    <p>What is the most well known social action David Attenborough takes to be a worldwide activist?</p>
+    <form class="radio-options">
+      <div><input type="radio" name="q5" value="A" id="q5a"><label for="q5a">Broadcasts information about biodiversity on TV.</label></div>
+      <div><input type="radio" name="q5" value="B" id="q5b"><label for="q5b">Plants trees to regrow lots of the world's lost trees.</label></div>
+      <div><input type="radio" name="q5" value="C" id="q5c"><label for="q5c">Conducts lab experiments on plants to restore its ancestors.</label></div>
+      <div><input type="radio" name="q5" value="D" id="q5d"><label for="q5d">Designs and makes greenhouses to grow plants.</label></div>
+    </form>
+    <button type="button" class="check-btn" onclick="checkRadio(5)">Check Answer</button>
+    <div id="feedback5" class="feedback"></div>
+  </article>
+
+  <!-- Question 6 -->
+  <article class="question-card">
+    <h3>Question 6</h3>
+    <p>What is the only animal David Attenborough hates?</p>
+    <form class="radio-options">
+      <div><input type="radio" name="q6" value="A" id="q6a"><label for="q6a">Spiders</label></div>
+      <div><input type="radio" name="q6" value="B" id="q6b"><label for="q6b">Rats</label></div>
+      <div><input type="radio" name="q6" value="C" id="q6c"><label for="q6c">Mice</label></div>
+      <div><input type="radio" name="q6" value="D" id="q6d"><label for="q6d">Snakes</label></div>
+    </form>
+    <button type="button" class="check-btn" onclick="checkRadio(6)">Check Answer</button>
+    <div id="feedback6" class="feedback"></div>
+  </article>
+
+  <!-- Question 7 -->
+  <article class="question-card">
+    <h3>Question 7</h3>
+    <p>What Social Action did Joshua Wong do to get arrested?</p>
+    <form class="radio-options">
+      <div><input type="radio" name="q7" value="A" id="q7a"><label for="q7a">Shoot at a police dude.</label></div>
+      <div><input type="radio" name="q7" value="B" id="q7b"><label for="q7b">Kill someone.</label></div>
+      <div><input type="radio" name="q7" value="C" id="q7c"><label for="q7c">Participated in an unauthorised protest.</label></div>
+      <div><input type="radio" name="q7" value="D" id="q7d"><label for="q7d">Storm a police station wil firearms.</label></div>
+    </form>
+    <button type="button" class="check-btn" onclick="checkRadio(7)">Check Answer</button>
+    <div id="feedback7" class="feedback"></div>
+  </article>
+  
+    <!-- Question 8 -->
+  <div class="question-card">
+    <h3>Question 8</h3>
+    <p>Where was Joshua Wong born?</p>
+    <input type="text" id="q8" placeholder="Type your answer here...">
+    <button id="submit8" class="check-btn" onclick="checkInput(8)">Submit</button>
+    <div class="feedback" id="feedback8"></div>
+  </div>
+  
+    <!-- Question 9 -->
+  <article class="question-card">
+    <h3>Question 9</h3>
+    <p>What movement did Alicia Garza co-found that helps race equality?</p>
+    <form class="radio-options">
+      <div><input type="radio" name="q9" value="A" id="q9a"><label for="q9a">The Polynesian Panthers.</label></div>
+      <div><input type="radio" name="q9" value="B" id="q9b"><label for="q9b">The Civil Rights Movement.</label></div>
+      <div><input type="radio" name="q9" value="C" id="q9c"><label for="q9c">#Antiracism.</label></div>
+      <div><input type="radio" name="q9" value="D" id="q9d"><label for="q9d">Black Lives Matter.</label></div>
+    </form>
+    <button type="button" class="check-btn" onclick="checkRadio(9)">Check Answer</button>
+    <div id="feedback9" class="feedback"></div>
+  </article>
+  
+    <!-- Question 10 -->
+  <div class="question-card">
+    <h3>Question 10</h3>
+    <p>Where does Alicia Garza come from?</p>
+    <input type="text" id="q10" placeholder="Type your answer here...">
+    <button id="submit10" class="check-btn" onclick="checkInput(10)">Submit</button>
+    <div class="feedback" id="feedback10"></div>
+  </div>
+  
+  <!-- Question 11 -->
+  <article class="question-card">
+    <h3>Question 11</h3>
+    <p>What is Malala Yousafzai most famous for?</p>
+    <form class="radio-options">
+    <div><input type="radio" name="q11" value="A" id="q11a"><label for="q11a">Fighting climate change</label></div>
+      <div><input type="radio" name="q11" value="B" id="q11b"><label for="q11b">Education for girls</label></div>
+      <div><input type="radio" name="q11" value="C" id="q11c"><label for="q11c">Winning a singing competition</label></div>
+    </form>
+    <button type="button" class="check-btn" onclick="checkRadio(11)">Check Answer</button>
+    <div id="feedback11" class="feedback"></div>
+  </article>
+
+  <!-- Question 12 -->
+  <article class="question-card">
+    <h3>Question 12</h3>
+    <p>Where was Malala Yousafzai born?</p>
+    <input type="text" id="q12" placeholder="Type your answer here...">
+    <button id="submit12" type="button" class="check-btn" onclick="checkInput(12)">Submit</button>
+    <div id="feedback12" class="feedback"></div>
+  </article>
+
+  <!-- Question 13 -->
+  <article class="question-card">
+    <h3>Question 13</h3>
+    <p>What did Dame Whina Cooper do in 1975?</p>
+    <form class="radio-options">
+      <div><input type="radio" name="q13" value="A" id="q13a"><label for="q13a">Led the Māori Land March</label></div>
+      <div><input type="radio" name="q13" value="B" id="q13b"><label for="q13b">Became Prime Minister</label></div>
+      <div><input type="radio" name="q13" value="C" id="q13c"><label for="q13c">Wrote a famous novel</label></div>
+    </form>
+    <button type="button" class="check-btn" onclick="checkRadio(13)">Check Answer</button>
+    <div id="feedback13" class="feedback"></div>
+  </article>
+
+  <!-- Question 14 -->
+  <article class="question-card">
+    <h3>Question 14</h3>
+    <p>Where was Dame Whina Cooper from?</p>
+    <input type="text" id="q14" placeholder="Type your answer here...">
+    <button id="submit14" type="button" class="check-btn" onclick="checkInput(14)">Submit</button>
+    <div id="feedback14" class="feedback"></div>
+  </article>
+  
+  <!-- foot -->
+  
+  <footer id="score-container">
+    <div id="score">Score: 0/14<br></div>
+    <center>The response will only be given if you have answered all of the questions.</center>
+    <h6><br>
+      I got some of this code from W³ Schools, Stackoverflow, Grok's courses and existing Reddit posts to make this quiz.
+    </h6>
+    <div id="final-feedback" class="feedback" style="display: none;"></div>
+    <div id="countdown"></div>
+    <div id="player-name-display" class="feedback" style="display:none;"></div>
+  </footer>
+</section>
+
+<script src="quizmarsh.js" defer></script>
+</body>
+</html>
