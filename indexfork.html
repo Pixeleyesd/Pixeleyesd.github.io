@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Component Knowledge Check</title>
+  <link rel="stylesheet" href="stylefork.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Test Your Electronics Knowledge</h1>
+    </header>
+
+    <!-- Question 1: Radio Buttons -->
+    <section class="question" data-question="1">
+      <h2>Q1: Resistor Function</h2>
+      <p>What is the primary role of a resistor in a circuit?</p>
+      <div class="options">
+        <input type="radio" name="resistor" value="A" id="q1a" />
+        <label for="q1a">Store charge</label><br />
+        <input type="radio" name="resistor" value="B" id="q1b" />
+        <label for="q1b">Amplify signals</label><br />
+        <input type="radio" name="resistor" value="C" id="q1c" />
+        <label for="q1c">Restrict current flow</label><br />
+        <input type="radio" name="resistor" value="D" id="q1d" />
+        <label for="q1d">Emit light</label><br />
+      </div>
+      <button onclick="checkRadio(1)">Submit</button>
+      <div id="resp1" class="response"></div>
+    </section>
+
+    <!-- Question 2: Dropdown -->
+    <section class="question" data-question="2">
+      <h2>Q2: LED Without Resistor</h2>
+      <p>What’s likely to occur if an LED is powered directly by a 9V battery?</p>
+      <select id="select-q2">
+        <option value="">--Choose an outcome--</option>
+        <option value="A">It shines brightly</option>
+        <option value="B">No light at all</option>
+        <option value="C">It might burn out</option>
+        <option value="D">The battery explodes</option>
+      </select>
+      <button onclick="checkDropdown(2)">Confirm</button>
+      <div id="resp2" class="response"></div>
+    </section>
+
+    <!-- Question 3: Text Input -->
+    <section class="question" data-question="3">
+      <h2>Q3: Energy Storage</h2>
+      <p>Name the component that stores electrical energy for short periods:</p>
+      <input type="text" id="text-q3" placeholder="e.g., battery, coil..." oninput="checkInput(3)" />
+      <div id="resp3" class="response"></div>
+    </section>
+
+    <!-- Question 4: Text Input -->
+    <section class="question" data-question="4">
+      <h2>Q4: Symbol Meaning</h2>
+      <p>What does the ⏚ symbol indicate in electronics?</p>
+      <input type="text" id="text-q4" placeholder="Enter the symbol meaning" oninput="checkInput(4)" />
+      <div id="resp4" class="response"></div>
+    </section>
+
+    <!-- Question 5: Button Choices -->
+    <section class="question" data-question="5">
+      <h2>Q5: Bulb Behavior in Parallel</h2>
+      <p>In a parallel circuit, if one bulb fails, what happens?</p>
+      <div class="multi-buttons">
+        <button onclick="checkBtn(5, 'The other bulb stays lit')">The other bulb stays lit</button>
+        <button onclick="checkBtn(5, 'Both bulbs turn off')">Both bulbs turn off</button>
+        <button onclick="checkBtn(5, 'The battery drains faster')">The battery drains faster</button>
+        <button onclick="checkBtn(5, 'A fuse will blow')">A fuse will blow</button>
+      </div>
+      <div id="resp5" class="response"></div>
+    </section>
+
+    <footer>
+      <h2 id="total-score">Score: 0 / 5</h2>
+      <div id="quiz-result" class="final-message"></div>
+    </footer>
+  </main>
+
+  <script src="scriptfork.js"></script>
+</body>
+</html>

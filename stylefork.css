@@ -1,0 +1,47 @@
+/* Basic Styles */
+.container {
+  width: 70%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.question {
+  margin: 20px 0;
+}
+
+.options input, .multi-buttons button {
+  margin: 5px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button.selected {
+  background-color: #f1c40f; /* Yellow when selected */
+}
+
+.response {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+footer {
+  margin-top: 20px;
+}
