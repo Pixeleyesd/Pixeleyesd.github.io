@@ -1,0 +1,123 @@
+h1 {
+    font-size: 56.7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+em {
+    font-weight: 600;
+}
+
+body {
+    margin: 0;
+    background: #f7fbff;
+    color: #1f2d3d;
+}
+
+.bocks {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16.67%;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.teckst-content {
+    flex: 1;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    width: 48%;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.box img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.box1 {
+    background-color: lightblue;
+}
+
+.box3 {
+    background-color: lightblue;
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #0088ff;
+    text-align: center;
+    padding: 15px;
+    gap: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box2 img {
+    width: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.box4 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #0088ff;
+    text-align: center;
+    padding: 15px;
+    gap: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(47, 47, 47);
+    font-weight: 600;
+}
