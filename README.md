@@ -22,4 +22,4 @@ My personal website :)
 ## Socials / Links included:
 [Github](https://github.com/Pixeleyesd)
 [Portal: Minecraft Edition Discord](https://discord.gg/Sk9dQcbtsV)
-[My Modpack](https://modrinth.com/modpack/portalminecraftedition)
+[My Modpack](https://modrinth.com/modpack/portalmcedition)
